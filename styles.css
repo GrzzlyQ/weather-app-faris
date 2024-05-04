@@ -1,0 +1,228 @@
+:root {
+    --primary-bg-color: #f0f0f0; 
+    --widget-bg-color: #ffffff; 
+    --primary-text-color: #333; 
+    --accent-color: #4a90e2; 
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    font-family: var(--font-primary);
+    color: var(--primary-text-color);
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+    color: var(--accent-color);
+}
+
+#weather-jakarta {
+    background-color: var(--widget-bg-color);
+    width: 150px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-image: url(https://images.unsplash.com/photo-1617687611017-48db8d42fd8f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: -200px;
+}
+
+#weather-jakarta:hover {
+    transform: translateY(-5px);
+
+    #description {
+        color: black;
+    }
+    #weather-icon {
+        visibility: visible;
+    }
+    #location {
+        font-size: 25px;
+        transform: translateX(-30px);
+    }
+    #temperature {
+        color: black;
+    }
+}
+
+#location, #temperature, #description {
+    font-family: var(--font-secondary);
+}
+
+#location {
+    font-size: larger;
+    position: relative;
+    left: 30px;
+}
+
+#temperature {
+    font-size: small;
+    color: transparent;
+}
+
+#description {
+    font-size: 10px;
+    text-align: end;
+    position: relative;
+    top: 65px;
+    left: 2px;
+    color: transparent;
+}
+
+#weather-icon {
+    position: relative;
+    top: 90px;
+    left: 90px;
+    visibility: hidden;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#weather-balikpapan {
+    background-color: var(--widget-bg-color);
+    width: 150px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-image: url(https://images.unsplash.com/photo-1713502622674-e6be524eb09e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -220px;
+    left: -20px;
+}
+
+#weather-balikpapan:hover {
+    transform: translateY(-5px);
+
+    #description1 {
+        color: black;
+    }
+    #weather-icon1 {
+        visibility: visible;
+    }
+    #location1 {
+        text-align: left;
+        font-size: 20px;
+    }
+    #temperature1 {
+        color: black;
+    }
+}
+
+#location1, #temperature1, #description1 {
+    font-family: var(--font-secondary);
+}
+
+#location1 {
+    text-align: center;
+    font-size: larger;
+    position: relative;
+}
+
+#temperature1 {
+    font-size: small;
+    color: transparent;
+}
+
+#description1 {
+    font-size: 10px;
+    text-align: end;
+    position: relative;
+    top: 45px;
+    left: 2px;
+    color: transparent;
+}
+
+#weather-icon1 {
+    position: relative;
+    top: 67px;
+    left: 90px;
+    visibility: hidden;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#weather-banda-aceh {
+    background-color: var(--widget-bg-color);
+    width: 150px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-image: url(https://images.unsplash.com/photo-1630225761431-56260e54e02e?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -440px;
+    left: 160px;
+}
+
+#weather-banda-aceh:hover {
+    transform: translateY(-5px);
+
+    #description2 {
+        color: black;
+    }
+    #weather-icon2 {
+        visibility: visible;
+    }
+    #location2 {
+        text-align: left;
+        font-size: 20px;
+    }
+    #temperature2 {
+        color: black;
+    }
+}
+
+#location2, #temperature2, #description2 {
+    font-family: var(--font-secondary);
+}
+
+#location2 {
+    text-align: center;
+    font-size: larger;
+    position: relative;
+}
+
+#temperature2 {
+    font-size: small;
+    color: transparent;
+}
+
+#description2 {
+    font-size: 10px;
+    text-align: end;
+    position: relative;
+    top: 70px;
+    left: 2px;
+    color: transparent;
+}
+
+#weather-icon2 {
+    position: relative;
+    top: 90px;
+    left: 90px;
+    visibility: hidden;
+}
